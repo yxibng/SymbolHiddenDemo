@@ -14,7 +14,44 @@
 		86FF201625512ADD00B1962D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 86FF201525512ADD00B1962D /* Assets.xcassets */; };
 		86FF201925512ADD00B1962D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 86FF201725512ADD00B1962D /* LaunchScreen.storyboard */; };
 		86FF201C25512ADD00B1962D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 86FF201B25512ADD00B1962D /* main.m */; };
+		86FF203B25512B2700B1962D /* DynamicLib.h in Headers */ = {isa = PBXBuildFile; fileRef = 86FF203925512B2700B1962D /* DynamicLib.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		86FF203F25512B2700B1962D /* DynamicLib.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 86FF203725512B2700B1962D /* DynamicLib.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		86FF204D25512BD900B1962D /* Symbol.h in Headers */ = {isa = PBXBuildFile; fileRef = 86FF204B25512BD900B1962D /* Symbol.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		86FF204E25512BD900B1962D /* Symbol.m in Sources */ = {isa = PBXBuildFile; fileRef = 86FF204C25512BD900B1962D /* Symbol.m */; };
+		86FF207D2551338800B1962D /* DynamicLib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86FF203725512B2700B1962D /* DynamicLib.framework */; };
+		86FF20A525513F9B00B1962D /* DynamicLib2.h in Headers */ = {isa = PBXBuildFile; fileRef = 86FF20A325513F9B00B1962D /* DynamicLib2.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		86FF20A825513F9B00B1962D /* DynamicLib2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86FF20A125513F9B00B1962D /* DynamicLib2.framework */; };
+		86FF20A925513F9B00B1962D /* DynamicLib2.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 86FF20A125513F9B00B1962D /* DynamicLib2.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		86FF20B225513FB100B1962D /* Symbol.h in Headers */ = {isa = PBXBuildFile; fileRef = 86FF20B025513FB100B1962D /* Symbol.h */; };
+		86FF20B325513FB100B1962D /* Symbol.m in Sources */ = {isa = PBXBuildFile; fileRef = 86FF20B125513FB100B1962D /* Symbol.m */; };
+		86FF20B925513FF400B1962D /* Wrapper.h in Headers */ = {isa = PBXBuildFile; fileRef = 86FF20B725513FF400B1962D /* Wrapper.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		86FF20BA25513FF400B1962D /* Wrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 86FF20B825513FF400B1962D /* Wrapper.m */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		86FF20A625513F9B00B1962D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 86FF1FFE25512ADB00B1962D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 86FF20A025513F9B00B1962D;
+			remoteInfo = DynamicLib2;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		86FF204325512B2700B1962D /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				86FF203F25512B2700B1962D /* DynamicLib.framework in Embed Frameworks */,
+				86FF20A925513F9B00B1962D /* DynamicLib2.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		86FF200625512ADB00B1962D /* SymbolHiddenDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SymbolHiddenDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -29,10 +66,38 @@
 		86FF201825512ADD00B1962D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		86FF201A25512ADD00B1962D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		86FF201B25512ADD00B1962D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		86FF203725512B2700B1962D /* DynamicLib.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DynamicLib.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		86FF203925512B2700B1962D /* DynamicLib.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DynamicLib.h; sourceTree = "<group>"; };
+		86FF203A25512B2700B1962D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		86FF204B25512BD900B1962D /* Symbol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Symbol.h; sourceTree = "<group>"; };
+		86FF204C25512BD900B1962D /* Symbol.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Symbol.m; sourceTree = "<group>"; };
+		86FF20A125513F9B00B1962D /* DynamicLib2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DynamicLib2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		86FF20A325513F9B00B1962D /* DynamicLib2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DynamicLib2.h; sourceTree = "<group>"; };
+		86FF20A425513F9B00B1962D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		86FF20B025513FB100B1962D /* Symbol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Symbol.h; sourceTree = "<group>"; };
+		86FF20B125513FB100B1962D /* Symbol.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Symbol.m; sourceTree = "<group>"; };
+		86FF20B725513FF400B1962D /* Wrapper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Wrapper.h; sourceTree = "<group>"; };
+		86FF20B825513FF400B1962D /* Wrapper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Wrapper.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		86FF200325512ADB00B1962D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				86FF207D2551338800B1962D /* DynamicLib.framework in Frameworks */,
+				86FF20A825513F9B00B1962D /* DynamicLib2.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		86FF203425512B2700B1962D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		86FF209E25513F9B00B1962D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -46,7 +111,10 @@
 			isa = PBXGroup;
 			children = (
 				86FF200825512ADB00B1962D /* SymbolHiddenDemo */,
+				86FF203825512B2700B1962D /* DynamicLib */,
+				86FF20A225513F9B00B1962D /* DynamicLib2 */,
 				86FF200725512ADB00B1962D /* Products */,
+				86FF205F25512DEE00B1962D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,6 +122,8 @@
 			isa = PBXGroup;
 			children = (
 				86FF200625512ADB00B1962D /* SymbolHiddenDemo.app */,
+				86FF203725512B2700B1962D /* DynamicLib.framework */,
+				86FF20A125513F9B00B1962D /* DynamicLib2.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -76,7 +146,60 @@
 			path = SymbolHiddenDemo;
 			sourceTree = "<group>";
 		};
+		86FF203825512B2700B1962D /* DynamicLib */ = {
+			isa = PBXGroup;
+			children = (
+				86FF203925512B2700B1962D /* DynamicLib.h */,
+				86FF203A25512B2700B1962D /* Info.plist */,
+				86FF204B25512BD900B1962D /* Symbol.h */,
+				86FF204C25512BD900B1962D /* Symbol.m */,
+			);
+			path = DynamicLib;
+			sourceTree = "<group>";
+		};
+		86FF205F25512DEE00B1962D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		86FF20A225513F9B00B1962D /* DynamicLib2 */ = {
+			isa = PBXGroup;
+			children = (
+				86FF20A325513F9B00B1962D /* DynamicLib2.h */,
+				86FF20A425513F9B00B1962D /* Info.plist */,
+				86FF20B025513FB100B1962D /* Symbol.h */,
+				86FF20B125513FB100B1962D /* Symbol.m */,
+				86FF20B725513FF400B1962D /* Wrapper.h */,
+				86FF20B825513FF400B1962D /* Wrapper.m */,
+			);
+			path = DynamicLib2;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		86FF203225512B2700B1962D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				86FF204D25512BD900B1962D /* Symbol.h in Headers */,
+				86FF203B25512B2700B1962D /* DynamicLib.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		86FF209C25513F9B00B1962D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				86FF20B225513FB100B1962D /* Symbol.h in Headers */,
+				86FF20B925513FF400B1962D /* Wrapper.h in Headers */,
+				86FF20A525513F9B00B1962D /* DynamicLib2.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		86FF200525512ADB00B1962D /* SymbolHiddenDemo */ = {
@@ -86,15 +209,53 @@
 				86FF200225512ADB00B1962D /* Sources */,
 				86FF200325512ADB00B1962D /* Frameworks */,
 				86FF200425512ADB00B1962D /* Resources */,
+				86FF204325512B2700B1962D /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				86FF20A725513F9B00B1962D /* PBXTargetDependency */,
 			);
 			name = SymbolHiddenDemo;
 			productName = SymbolHiddenDemo;
 			productReference = 86FF200625512ADB00B1962D /* SymbolHiddenDemo.app */;
 			productType = "com.apple.product-type.application";
+		};
+		86FF203625512B2700B1962D /* DynamicLib */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 86FF204025512B2700B1962D /* Build configuration list for PBXNativeTarget "DynamicLib" */;
+			buildPhases = (
+				86FF203225512B2700B1962D /* Headers */,
+				86FF203325512B2700B1962D /* Sources */,
+				86FF203425512B2700B1962D /* Frameworks */,
+				86FF203525512B2700B1962D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DynamicLib;
+			productName = DynamicLib;
+			productReference = 86FF203725512B2700B1962D /* DynamicLib.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		86FF20A025513F9B00B1962D /* DynamicLib2 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 86FF20AA25513F9B00B1962D /* Build configuration list for PBXNativeTarget "DynamicLib2" */;
+			buildPhases = (
+				86FF209C25513F9B00B1962D /* Headers */,
+				86FF209D25513F9B00B1962D /* Sources */,
+				86FF209E25513F9B00B1962D /* Frameworks */,
+				86FF209F25513F9B00B1962D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DynamicLib2;
+			productName = DynamicLib2;
+			productReference = 86FF20A125513F9B00B1962D /* DynamicLib2.framework */;
+			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
@@ -105,6 +266,12 @@
 				LastUpgradeCheck = 1210;
 				TargetAttributes = {
 					86FF200525512ADB00B1962D = {
+						CreatedOnToolsVersion = 12.1;
+					};
+					86FF203625512B2700B1962D = {
+						CreatedOnToolsVersion = 12.1;
+					};
+					86FF20A025513F9B00B1962D = {
 						CreatedOnToolsVersion = 12.1;
 					};
 				};
@@ -123,6 +290,8 @@
 			projectRoot = "";
 			targets = (
 				86FF200525512ADB00B1962D /* SymbolHiddenDemo */,
+				86FF203625512B2700B1962D /* DynamicLib */,
+				86FF20A025513F9B00B1962D /* DynamicLib2 */,
 			);
 		};
 /* End PBXProject section */
@@ -135,6 +304,20 @@
 				86FF201925512ADD00B1962D /* LaunchScreen.storyboard in Resources */,
 				86FF201625512ADD00B1962D /* Assets.xcassets in Resources */,
 				86FF201425512ADB00B1962D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		86FF203525512B2700B1962D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		86FF209F25513F9B00B1962D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -152,7 +335,32 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		86FF203325512B2700B1962D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				86FF204E25512BD900B1962D /* Symbol.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		86FF209D25513F9B00B1962D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				86FF20B325513FB100B1962D /* Symbol.m in Sources */,
+				86FF20BA25513FF400B1962D /* Wrapper.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		86FF20A725513F9B00B1962D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 86FF20A025513F9B00B1962D /* DynamicLib2 */;
+			targetProxy = 86FF20A625513F9B00B1962D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		86FF201225512ADB00B1962D /* Main.storyboard */ = {
@@ -322,6 +530,112 @@
 			};
 			name = Release;
 		};
+		86FF204125512B2700B1962D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = VB8MVMJBU4;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = DynamicLib/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.duobeiyun.DynamicLib;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		86FF204225512B2700B1962D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = VB8MVMJBU4;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = DynamicLib/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.duobeiyun.DynamicLib;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		86FF20AB25513F9B00B1962D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = VB8MVMJBU4;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = DynamicLib2/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.duobeiyun.DynamicLib2;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				STRIP_STYLE = "non-global";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		86FF20AC25513F9B00B1962D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = VB8MVMJBU4;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = DynamicLib2/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.duobeiyun.DynamicLib2;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				STRIP_STYLE = "non-global";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -339,6 +653,24 @@
 			buildConfigurations = (
 				86FF202025512ADD00B1962D /* Debug */,
 				86FF202125512ADD00B1962D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		86FF204025512B2700B1962D /* Build configuration list for PBXNativeTarget "DynamicLib" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				86FF204125512B2700B1962D /* Debug */,
+				86FF204225512B2700B1962D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		86FF20AA25513F9B00B1962D /* Build configuration list for PBXNativeTarget "DynamicLib2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				86FF20AB25513F9B00B1962D /* Debug */,
+				86FF20AC25513F9B00B1962D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
